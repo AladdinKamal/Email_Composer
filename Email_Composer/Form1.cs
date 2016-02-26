@@ -12,6 +12,7 @@ using System.Net;
 
 namespace Email_Composer
 {
+
     public partial class Form1 : Form
     {
         public Form1()
@@ -21,7 +22,7 @@ namespace Email_Composer
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("\t\tEmail Composer v0.3\n\n This program current supports google and yahoo accounts only.");
+            MessageBox.Show("\t\tEmail Composer v1.0\n\n This program current supports google and yahoo accounts only.");
         }
 
         private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -63,31 +64,60 @@ namespace Email_Composer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MailMessage message = new MailMessage();
-            message.From = new MailAddress(textBox4.Text);
-            message.Subject = textBox2.Text;
-            message.Body = textBox3.Text;
-            foreach (string s in textBox1.Text.Split(';'))
+            if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "" || textBox5.Text == "")
             {
-                message.To.Add(s);
+                MessageBox.Show("Some fields are empty, please try again", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            SmtpClient client = new SmtpClient();
-            client.Credentials = new NetworkCredential(textBox4.Text, textBox5.Text);
-
-            if (textBox4.Text.Contains("gmail") || textBox4.Text.Contains("Gmail"))
+            else if (!textBox1.Text.Contains("@") || !textBox4.Text.Contains("@") || !textBox1.Text.Contains(".") || !textBox4.Text.Contains("."))
             {
-                client.Host = "smtp.gmail.com";
-                client.Port = 587;
+                MessageBox.Show("Sender or recipients accounts are incorrect", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            if (textBox4.Text.Contains("yahoo") || textBox4.Text.Contains("Yahoo"))
+            else
             {
-                client.Host = "smtp.mail.yahoo.com";
-                client.Port = 465;
-            }
+                try
+                {
+                    button1.Enabled = false;
+                    MailMessage message = new MailMessage();
+                    message.From = new MailAddress(textBox4.Text);
+                    message.Subject = textBox2.Text;
+                    message.Body = textBox3.Text;
+                    foreach (string s in textBox1.Text.Split(';'))
+                    {
+                        message.To.Add(s);
+                    }
+                    SmtpClient client = new SmtpClient();
+                    client.Credentials = new NetworkCredential(textBox4.Text, textBox5.Text);
 
-            client.EnableSsl = true;
-            client.Send(message);
+                    if (textBox4.Text.Contains("gmail") || textBox4.Text.Contains("Gmail"))
+                    {
+                        client.Host = "smtp.gmail.com";
+                        client.Port = 587;
+                    }
+                    else if (textBox4.Text.Contains("yahoo") || textBox4.Text.Contains("Yahoo"))
+                    {
+                        client.Host = "smtp.mail.yahoo.com";
+                        client.Port = 465;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Only gmail and yahoo accounts are supported.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        button1.Enabled = true;
+                        return;
+                    }
+
+                    client.EnableSsl = true;
+                    client.Send(message);
+                    MessageBox.Show("Message was sent successfully", "Successful!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch
+                {
+                    MessageBox.Show("\tThere was an error sending the message.\nPlease make sure you entered account information correctly.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    button1.Enabled = true;
+                }
+            }
         }
     }
 }

@@ -17,24 +17,46 @@ namespace Email_Composer
             InitializeComponent();
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Email Composer v0.1");
+            MessageBox.Show("Email Composer v0.2");
         }
 
         private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void textBox4_Enter(object sender, EventArgs e)
+        {
+            if (textBox4.Text == "Account@Example.com")
+                textBox4.Clear();
+            textBox4.ForeColor = Color.Black;
+        }
+
+        private void textBox4_Leave(object sender, EventArgs e)
+        {
+            if (textBox4.Text.Trim() == "")
+            {
+                textBox4.ForeColor = Color.Gray;
+                textBox4.Text = "Account@Example.com";
+            }
+        }
+
+        private void textBox5_Enter(object sender, EventArgs e)
+        {
+            if (textBox5.Text == "Password")
+                textBox5.Clear();
+            textBox5.ForeColor = Color.Black;
+        }
+
+        private void textBox5_Leave(object sender, EventArgs e)
+        {
+            if (textBox5.Text.Trim() == "")
+            {
+                textBox5.ForeColor = Color.Gray;
+                textBox5.Text = "XxxxxxxX";
+            }
         }
     }
 }

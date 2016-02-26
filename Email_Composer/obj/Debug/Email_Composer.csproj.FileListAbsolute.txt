@@ -1,0 +1,9 @@
+c:\users\aladdin\documents\visual studio 2015\Projects\Email_Composer\Email_Composer\bin\Debug\Email_Composer.exe.config
+c:\users\aladdin\documents\visual studio 2015\Projects\Email_Composer\Email_Composer\bin\Debug\Email_Composer.exe
+c:\users\aladdin\documents\visual studio 2015\Projects\Email_Composer\Email_Composer\bin\Debug\Email_Composer.pdb
+c:\users\aladdin\documents\visual studio 2015\Projects\Email_Composer\Email_Composer\obj\Debug\Email_Composer.csprojResolveAssemblyReference.cache
+c:\users\aladdin\documents\visual studio 2015\Projects\Email_Composer\Email_Composer\obj\Debug\Email_Composer.Form1.resources
+c:\users\aladdin\documents\visual studio 2015\Projects\Email_Composer\Email_Composer\obj\Debug\Email_Composer.Properties.Resources.resources
+c:\users\aladdin\documents\visual studio 2015\Projects\Email_Composer\Email_Composer\obj\Debug\Email_Composer.csproj.GenerateResource.Cache
+c:\users\aladdin\documents\visual studio 2015\Projects\Email_Composer\Email_Composer\obj\Debug\Email_Composer.exe
+c:\users\aladdin\documents\visual studio 2015\Projects\Email_Composer\Email_Composer\obj\Debug\Email_Composer.pdb

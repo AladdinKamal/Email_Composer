@@ -29,18 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,7 +58,6 @@
             this.label1.Size = new System.Drawing.Size(78, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Recipiants :";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -71,7 +71,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 173);
+            this.label3.Location = new System.Drawing.Point(19, 165);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 17);
             this.label3.TabIndex = 2;
@@ -83,21 +83,35 @@
             this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(15, 392);
+            this.groupBox1.Location = new System.Drawing.Point(15, 387);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(328, 106);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Account Info";
             // 
-            // label4
+            // textBox5
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 35);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 17);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Email :";
+            this.textBox5.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox5.Location = new System.Drawing.Point(94, 63);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.PasswordChar = '●';
+            this.textBox5.Size = new System.Drawing.Size(208, 24);
+            this.textBox5.TabIndex = 3;
+            this.textBox5.Text = "Password";
+            this.textBox5.Enter += new System.EventHandler(this.textBox5_Enter);
+            this.textBox5.Leave += new System.EventHandler(this.textBox5_Leave);
+            // 
+            // textBox4
+            // 
+            this.textBox4.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox4.Location = new System.Drawing.Point(94, 33);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(208, 24);
+            this.textBox4.TabIndex = 2;
+            this.textBox4.Text = "Account@Example.com";
+            this.textBox4.Enter += new System.EventHandler(this.textBox4_Enter);
+            this.textBox4.Leave += new System.EventHandler(this.textBox4_Leave_1);
             // 
             // label5
             // 
@@ -108,13 +122,24 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Password :";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(16, 35);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(48, 17);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Email :";
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(253, 504);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(241, 499);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 46);
+            this.button1.Size = new System.Drawing.Size(116, 49);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Send";
+            this.button1.Text = "        Send";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox1
@@ -135,26 +160,11 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(22, 193);
+            this.textBox3.Location = new System.Drawing.Point(22, 185);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(321, 193);
             this.textBox3.TabIndex = 7;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(94, 33);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(208, 24);
-            this.textBox4.TabIndex = 2;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(94, 63);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(208, 24);
-            this.textBox5.TabIndex = 3;
             // 
             // menuStrip1
             // 
@@ -196,7 +206,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Email Composer";
             this.groupBox1.ResumeLayout(false);

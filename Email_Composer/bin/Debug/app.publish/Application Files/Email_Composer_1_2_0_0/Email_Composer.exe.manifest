@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Email_Composer.exe" version="1.2.0.0" publicKeyToken="be97103e1c4a38ea" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="1456537982_mail-icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Email_Composer" version="1.2.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Email_Composer.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Email_Composer.exe" size="255424">
+      <assemblyIdentity name="Email_Composer" version="1.2.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>aTZeFIF2X5jKbQdy42FhGdDwD/gJu1TaknWtg0rView=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="1456537982_mail-icon.ico" size="109669">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Ys2CPmRqnJ0srQAYMbVIOUAMQFDoz29KzYXlMrQf718=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Email_Composer.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=ALADDIN\Aladdin" issuerKeyHash="623b160903b33db597f87a40277170c58db606c5" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>QzMJXZ4vyyjPuxplCRJcy1rPtgPtEcuAS2dvNc60Zf0=</DigestValue></Reference></SignedInfo><SignatureValue>L3P2ZHttiTOZDOL/k0v0a48KebDgJBWqM06j4ygTbPVkKV/8mDfz6pV2cwXd1+16Kn4TWWIsy0gqj62dHxwGtNwhEVaVCcPssm4SD4Nmfr5SS1rXgvCJJmb2+Nr1JSuTlWcCmtRg644vH600A7XbENtpCBHJesFWGBwXtLEycPs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uSQls11Cvswgk1Kz+HuaO/NgyunSwc4EmfKK4Z5YVGml2WI6TGX2ZNm3G8HbjJWJlMTft77Gq6wN6WNfSoEIBueh/OrO+UBzOHGybDIphrvNP6A3rm3WVDWLBq2WQl+67cA8OXScVbr0QmFJ++EDRaD3Pl+2XDr+ZNMXCVlC/m0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="fd65b4ce356f674b80cb11ed03b6cf5acb5c1209651abbcf28cb2f9e5d093343" Description="" Url=""><as:assemblyIdentity name="Email_Composer.exe" version="1.2.0.0" publicKeyToken="be97103e1c4a38ea" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ALADDIN\Aladdin</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>jgQNjc8w7uPwUtDrklY6R/J8Nx4f2Uo+3Rn2Z+htd6s=</DigestValue></Reference></SignedInfo><SignatureValue>SI8blswiK1albPuI3yNMQe4PaBNSdtdxEhuXRr8PKRr3Kg3qysiWjRXoOMvGv8zd7yOIuCpZPlW95OrNC4iyIStUA9rEzNBvtVG8LlWhsDpuOd6mR9dRdWSWWDG45SxVXrcyKUCEUErpprWYjRN080KqGPV/mKN+dSP6UBgHCxo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uSQls11Cvswgk1Kz+HuaO/NgyunSwc4EmfKK4Z5YVGml2WI6TGX2ZNm3G8HbjJWJlMTft77Gq6wN6WNfSoEIBueh/OrO+UBzOHGybDIphrvNP6A3rm3WVDWLBq2WQl+67cA8OXScVbr0QmFJ++EDRaD3Pl+2XDr+ZNMXCVlC/m0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQMGFdAY4yr6NHC2SVKlRrtzANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4AQQBMAEEARABEAEkATgBcAEEAbABhAGQAZABpAG4wHhcNMTYwMjI3MTgzODQzWhcNMTcwMjI3MDAzODQzWjApMScwJQYDVQQDHh4AQQBMAEEARABEAEkATgBcAEEAbABhAGQAZABpAG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALkkJbNdQr7MIJNSs/h7mjvzYMrp0sHOBJnyiuGeWFRppdliOkxl9mTZtxvB24yViZTE37e+xqusDeljX0qBCAbnofzqzvlAczhxsmwyKYa7zT+gN65t1lQ1iwatlkJfuu3APDl0nFW69EJhSfvhA0Wg9z5ftlw6/mTTFwlZQv5tAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAh2nDiPym+wb8Hl+pTgYvaZfIO6Uw8/jFOvJJ2AqWw7wFqBbcgM1vRvYLAt+zNJrfgGgCQx8pGrHHMjSvOg1goM13N/G4/M8O3sIRcy7FK9xGJ1IA3fZd9+bFM2vRGa0PR+A996Mn00u1YrhGZEJAdTGngDGzDJ7A+6K6qG8R5bs=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

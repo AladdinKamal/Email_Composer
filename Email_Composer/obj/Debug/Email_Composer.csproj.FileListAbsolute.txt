@@ -7,3 +7,7 @@ c:\users\aladdin\documents\visual studio 2015\Projects\Email_Composer\Email_Comp
 c:\users\aladdin\documents\visual studio 2015\Projects\Email_Composer\Email_Composer\obj\Debug\Email_Composer.csproj.GenerateResource.Cache
 c:\users\aladdin\documents\visual studio 2015\Projects\Email_Composer\Email_Composer\obj\Debug\Email_Composer.exe
 c:\users\aladdin\documents\visual studio 2015\Projects\Email_Composer\Email_Composer\obj\Debug\Email_Composer.pdb
+C:\Users\Aladdin\documents\visual studio 2015\Projects\Email_Composer\Email_Composer\bin\Debug\Email_Composer.exe.manifest
+C:\Users\Aladdin\documents\visual studio 2015\Projects\Email_Composer\Email_Composer\bin\Debug\Email_Composer.application
+C:\Users\Aladdin\documents\visual studio 2015\Projects\Email_Composer\Email_Composer\obj\Debug\Email_Composer.exe.manifest
+C:\Users\Aladdin\documents\visual studio 2015\Projects\Email_Composer\Email_Composer\obj\Debug\Email_Composer.application
